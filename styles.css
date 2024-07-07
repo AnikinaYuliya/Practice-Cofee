@@ -30,15 +30,13 @@ body{
     font-family: "Jost","Open Sans", sans-serif;
     margin:0%
 }
-/*.first,.second{
-    
-    height:800px;
-    
-}*/
+
 .first{
+    width: 100%;
     background-color:  #EEEFF1;
     margin:0%;
     padding-top:0.3%;
+    padding-bottom: 50px;
 }
 header{
     display: flex;
@@ -57,22 +55,25 @@ header{
     width: 38%;
     display:inline;
     color:#1B1B1D;
-    font-size: 20px;
+    font-size: 18px;
 }
 .nav a{
     color:#1B1B1D;
-    font-size: 18px;
+    
     font-weight: 500;
     text-decoration: none;
-    margin-right:30px;
+    margin-right:4%;
 }
 .basket_button{
-    width: 56px;
-    height:56px;
+    width: clamp(30px,5%,55px);
+    aspect-ratio: 1/1;
     background-color: #FFFFFF;
     border: 0;
     border-radius: 50vh;
-    margin-right:30px;
+    margin-right:2%;
+}
+.basket_button img{
+    width: 80%;
 }
 .black_button{
     background-color: #1B1B1D;
@@ -81,40 +82,40 @@ header{
     
 }
 .voucher_button{
+    width: 15%;
     font-weight: 500;
     font-size:14px;
-    height: 56px;
-    /*border-radius: 50px;*/
+    
     padding:15px;
 }
 .first__content{
     display:flex;
     justify-content: space-evenly;
+    
 }
 .left_text{
-    width: 590px;
-    padding-left:20px;
+    width: 40%;
+    padding-left:3%;
 }
 .big_text{
-    width: 600px;
-    
     font-weight: 800;
     font-size:90px;
     line-height: 90px;
     margin:0;
 }
 .second_text{
-    width: 500px;
+    
     font-weight: 400;
     font-size:24px;
     color:#64646A
 }
 .download{
-    width: 230px;
-    height:70px;
+    width: 40%;
+    
     font-weight: 500;
     font-size:16px;
-    /*border-radius: 50px;*/
+    
+    padding: 3%;
     margin-right:30px;
 }
 .shop_link{
@@ -124,22 +125,22 @@ header{
 }
 
 .bigcup{
-    width: 530px;
+    width: 65%;
     
 }
 .prize{
-    width: 120px;
+    width: 20%;
     position:relative;
-    bottom:420px;
-    right:150px;
+    bottom:67%;
+    right:20%;
 }
 .stars{
-    width: 210px;
+    width: 28%;
     background-color: #FFFFFF;
     color: #64646A;
     font-weight: 400;
     font-size: 16px;
-    padding: 10px;
+    padding: 1.5%;
     border-radius: 20px;
 
     position:relative;
@@ -147,7 +148,7 @@ header{
     left:20px;
 }
 .blackstar{
-    width: 30px;
+    width: 15%;
 }
 .stars p{
     margin:5px;
@@ -169,22 +170,26 @@ header{
     margin-bottom: 6%;
 }
 .card_area{
-    height: 50%;
+    
     display:flex;
     justify-content: center;
+    /*align-items: stretch;*/
+    margin-bottom: 100px;
+    min-height: 60%;
 }
 .card{
-    width: 23%;
+    width: 20%;
+    /*height: 100%;*/
     box-shadow: 5px 7px 10px 0px rgba(34, 60, 80, 0.17);
-    border-radius: 20px;
-    padding: 15px;
+    border-radius: 25px;
+    padding: 2%;
     
 }
 .card~.card{
     margin-left: 3%;
 }
 .card>h3{
-    height: 15%;
+    /*height: 15%;*/
     font-weight: 600;
     font-size: 30px;
     color: #1B1B1D;
@@ -192,7 +197,7 @@ header{
     margin-bottom: 2%;
 }
 .card__description{
-    height: 15%;
+    
     font-weight: 400;
     font-size: 20px;
     color:#64646A;
@@ -216,13 +221,17 @@ header{
 }
 .third{
     display:flex;
-    height:600px;
+    padding-bottom: 100px;
     
 }
-.cups_image{
-    width: 60%;
+.cups{
+    width: 170%;
+}
+.cups__image{
+    width: 100%;
     margin-left: 8%;
 }
+
 .third__content h1{
     font-weight: 800;
     font-size: 50px;
@@ -238,10 +247,10 @@ header{
     
 }
 .fourth{
-    height:800px;
+    
     padding-left: 5%;
     padding-right: 5%;
-    
+    margin-bottom: 150px;
 }
 .fourth h1{
     font-weight: 800;
@@ -316,6 +325,9 @@ header{
     font-size: 20px;
     color: #1B1B1D;
 }
+.swiper-container .rating__starimage{
+    width: 4%;
+}
 .slide__text{
     margin-left:5%;
     margin-right:5%;
@@ -361,6 +373,7 @@ header{
     font-weight: 400;
     font-size: 20px;
     color: #64646A;
+    white-space: nowrap;
 }
 .contact_right img{
     width: 6em;
@@ -393,7 +406,7 @@ hr{
 footer{
     display: flex;
 }
-footer span{
+footer span, footer a{
     width: 50%;
     color: #64646A;
     font-size: 20px;
@@ -411,6 +424,16 @@ footer span~span{
         color: #1B1B1D;
         box-shadow: 5px 5px 5px 5px rgba(34, 60, 80, 0.5);
     }
+    a:hover{
+        text-decoration: underline;
+        font-weight: 800;
+
+    }
+    .basket_button:hover,.swiper-button-next:hover,.swiper-button-prev:hover,.contact__image:hover{
+        border:#1B1B1D;
+        box-shadow: 2px 2px 5px 5px rgba(34, 60, 80, 0.5);
+
+    }
 }
 @media(hover:none){
     .black_button:active{
@@ -418,34 +441,213 @@ footer span~span{
         color: #1B1B1D;
         box-shadow: 5px 5px 5px 5px rgba(34, 60, 80, 0.5);
     }
-}
-
-@media(hover:hover){
-    a:hover{
-        text-decoration: underline;
-        font-weight: 800;
-
-    }
-}
-@media(hover:none){
     a:active{
         text-decoration: underline;
         font-weight: 800;
         
     }
-}
-
-@media(hover:hover){
-    .basket_button:hover,.swiper-button-next:hover,.swiper-button-prev:hover{
-        border:#1B1B1D;
-        box-shadow: 2px 2px 5px 5px rgba(34, 60, 80, 0.5);
-
-    }
-}
-@media(hover:none){
-    .basket_button:active,.swiper-button-next:active,.swiper-button-prev:active{
+    .basket_button:active,.swiper-button-next:active,.swiper-button-prev:active,.contact__image:active{
         border:#1B1B1D;
         box-shadow: 2px 2px 5px 5px rgba(34, 60, 80, 0.5);
         
+    }
+}
+
+
+@media(max-width:1024px){
+    .big_text{
+        font-size: 60px;
+    }
+    
+    .first .right_image,.nav{
+        width: 50%;
+    }
+    .black_button{
+        font-size: 12px;
+    }
+    
+    .prize{
+        width: 15%;
+        bottom: 50%;
+    }
+    .stars{
+        width: 29%;
+        font-size: 14px;
+        bottom: 18%
+    }
+    .header__logo{
+        margin-right: 15%;
+    }
+    .card__description,.card img{
+        margin-bottom: 10px;
+    }
+    .card>h3,.slide__text{
+        font-size: 20px;
+    }
+    .card__description{
+        margin-bottom: 20%;
+        font-size: 15px;
+    }
+    .third__content h1{
+        
+        font-size: 45px;
+        
+    }
+    .third__content p{
+        
+        font-size: 25px;
+        
+    }
+    
+    
+}
+@media(max-width:768px){
+    .first header, .nav{
+        display: block;
+    }
+    .nav{
+        width: 100%;
+        padding-left: 5%;
+        
+    }
+    .nav a{
+        margin-right: 2%;
+        font-size: 12px;
+    }
+    .basket_button{
+        margin-left: 5%;
+    }
+    .voucher_button{
+        font-size: 10px;
+        padding: 8px;
+    }
+    .big_text{
+        font-size: 42px;
+        line-height: 50px;
+    }
+    .second_text,.contact_left p,.locations_left p{
+        font-size: 18px;
+    }
+    
+    
+    .second__header{
+        font-size: 42px;
+    }
+    .second__text{
+        font-size: 16px;
+    }
+    
+    
+    .card__button{
+        width: 60%;
+        font-size: 10px;
+    }
+    .third__content h1,.fourth h1{
+        
+        font-size: 35px;
+        
+    }
+    .third__content p{
+        
+        font-size: 20px;
+        
+    }
+    .swiper-container{
+        width: 80%;
+    }
+    .contact_left,.contact_right,.locations_left,.locations_right{
+        width: 50%;
+    }
+    
+    .fifth h2{
+        
+        font-size: 24px;
+        
+    }
+    .contact_right span,.locations_left a,footer span,footer a{
+        
+        font-size: 14px;
+        
+    }
+    .contact_right img{
+        width: 4em;
+    }
+    
+}
+@media(max-width:600px){
+    .voucher_button{
+        width: 20%;
+    }
+    .shop_link{
+        display: block;
+        font-size: 12px;
+        margin-top: 15px;
+    }
+    .download{
+        width: 60%;
+    }
+    .card_area{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 50%;
+    }
+    .card__button{
+        font-size: 0.9em;
+        padding: 1%;
+    }
+    .stars{
+        width: 40%;
+    }
+    .stars p{
+        
+        font-size: 12px;
+    }
+    .slide__name{
+        font-size: 18px;
+    }
+    .slide__text{
+        font-size: 16px;
+    }
+    
+}
+@media(max-width:480px){
+    .header__logo{
+        width: 25%;
+    }
+    .big_text{
+        font-size:32px;
+        line-height: 40px;
+    }
+    .bigcup{
+        width:80%
+    }
+    .stars{
+        bottom:5%;
+        left:5%;
+    }
+    .prize{
+        width: 20%;
+        right: -50%;
+    }
+    .third{
+        display: block;
+        padding: 5%;
+    }
+    .cups{
+        width: 100%;
+    }
+    .third__content{
+        text-align: center;
+    }
+    .contact_left p,.locations_left p{
+        font-size: 16px;
+    }
+    .fifth__logo{
+        width: 65%;
+    }
+    .social_media{
+        display: block;
     }
 }
