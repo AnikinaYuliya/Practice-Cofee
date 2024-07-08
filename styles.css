@@ -598,17 +598,17 @@ footer span~span{
         padding: 1%;
     }
     .stars{
-        width: 40%;
+        width: 45%;
     }
     .stars p{
         
         font-size: 12px;
     }
     .slide__name{
-        font-size: 18px;
+        font-size: 16px;
     }
     .slide__text{
-        font-size: 16px;
+        font-size: 14px;
     }
     
 }
@@ -616,9 +616,15 @@ footer span~span{
     .header__logo{
         width: 25%;
     }
+    .voucher_button{
+        width: 25%;
+    }
     .big_text{
-        font-size:32px;
+        font-size:26px;
         line-height: 40px;
+    }
+    .second_text{
+        font-size: 16px;
     }
     .bigcup{
         width:80%
